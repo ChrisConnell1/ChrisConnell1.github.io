@@ -1,0 +1,30 @@
+#html:hover{
+	background-color: #407fe5;
+}
+
+#css:hover{
+	background-color: #407fe5;
+}
+
+#boot:hover{
+	background-color: #407fe5;
+}
+
+
+#buff:hover{
+	color: #407fe5;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#data:hover{
+	color: #407fe5;
+	font-weight: bold;
+	cursor: pointer;
+}
+	
+#collab:hover{
+	color: #407fe5;
+	font-weight: bold;
+	cursor: pointer;
+}
