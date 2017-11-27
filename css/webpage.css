@@ -28,3 +28,7 @@
 	font-weight: bold;
 	cursor: pointer;
 }
+
+#server:hover{
+	background-color: #407ef5;
+}
