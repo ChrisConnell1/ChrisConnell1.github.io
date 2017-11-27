@@ -10,6 +10,9 @@
 	background-color: #407fe5;
 }
 
+#server:hover{
+	background-color: #407ef5;
+}
 
 #buff:hover{
 	color: #407fe5;
@@ -29,6 +32,14 @@
 	cursor: pointer;
 }
 
-#server:hover{
-	background-color: #407ef5;
-}
+#undertext {
+   opacity: .5;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+#undertext:hover {
+   opacity: 1;
+  }
+

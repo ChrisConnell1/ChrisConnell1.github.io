@@ -9,8 +9,14 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 		<link rel="stylesheet" href="./css/webpage.css">
+		
+		<script>
+			var shiftWindow = function() { scrollBy(0, -50) };
+			window.addEventListener("hashchange", shiftWindow);
+			function load() { if (window.location.hash) shiftWindow(); }
+		</script>
 	</head>
-	<body id="home">
+	<body onload="load()" id="home">
   
 	<!-- Navigation -->
 	<nav class="navbar navbar-toggleable-md fixed-top navbar-light" style="background-color: #407fe5;">
@@ -93,20 +99,32 @@
 			</div>
 		</div>
 	</div>
+	<br><br><br><br>
   <!-- /Projects -->
   
-  <!-- Skills-->
+  <!-- Skills 
+	** Not sure about this here... Thinking just a container with title, projects already has picture. **
+  
 	<div class="card text-white my-5" id="skills">
 		<img class="card-img" src="./img/skills.jpeg" alt="Card image">
 		<div class="card-img-overlay">
-			<h1 class="card-title text-center my-2">Skills</h1>
+			<h1 class="card-title text-center my-3">Skills</h1>
+		</div>
+	</div> -->
+	<div class="jumbotron jumbotron-fluid text-center">
+		<div class="container">
+			<div id="hoverme">
+				<h1 class="display-3">Skills</h1>
+			</div>
+			<p class="lead" id="undertext">These are the technologies I am familiar with. I have a core understanding of a full stack, and am learning more languages constantly.</p>
 		</div>
 	</div>
-  
+	
+	<!-- Kind of a mess... The titles "web", "database", "application" are centered in different container than the listed elements
 	<div class="card-group text-center">
 		<div class="card" style="width: 20rem;">
-			<div class="card-header text-primary h3">
-				Web
+			<div class="card-header text-primary h3 pl-5">
+				Web Development
 			</div>
 			<ul class="list-unstyled">
 				<li class="media" id="html">
@@ -130,8 +148,8 @@
 			</ul>
 		</div>
 		<div class="card" style="width: 20rem;">
-			<div class="card-header text-primary h3">
-				Database
+			<div class="card-header text-primary h3 pl-5">
+				Database Management
 			</div>
 				<ul class="list-unstyled">
 					<li class="media" id="html">
@@ -141,7 +159,7 @@
 						</div>
 					</li>
 					<li class="media" id="html">
-						<img class="mr-3" src="./img/sqlserver.png" alt="Generic placeholder image">
+						<img class="mr-3" src="./img/sqlserver.png" alt="./img/sqlserver.png">
 						<div class="media-body">
 							<h5 class="mt-0 mb-1">SQL Server/TSQL</h5>
 						</div>
@@ -149,7 +167,7 @@
 				</ul>
 		</div>
 	  <div class="card" style="width: 20rem;">
-		<div class="card-header text-primary h3">
+		<div class="card-header text-primary h3 pl-6">
 				Application
 		</div>
 			<ul class="list-unstyled">
@@ -174,9 +192,141 @@
 			</ul>
 		</div>
 	</div>
-  <!-- /Skills-->
+	
+   /Skills
   
-  <!--Contact-->
+  <div class="card-group text-center">
+		<div class="card" style="width: 20rem;">
+			<div class="card-header text-primary h3 pl-5">
+				Web Development
+			</div>
+			<ul class="list-unstyled">
+				<li class="media" id="html">
+					<img class="mr-3" src="./img/html.png" alt="Generic placeholder image">
+					<div class="media-body">
+						<h5 class="mt-0 mb-1">HTML5</h5>
+					</div>
+				</li>
+				<li class="media my-4" id="css">
+					<img class="mr-3" src="./img/css.png" alt="Generic placeholder image">
+					<div class="media-body">
+						<h5 class="mt-0 mb-1">CSS3</h5>
+					</div>
+				</li>
+				<li class="media" id="boot">
+					<img class="mr-3" src="./img/bootstrap.png" alt="Generic placeholder image">
+					<div class="media-body">
+						<h5 class="mt-0 mb-1">Bootstrap</h5>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>  -->
+  
+  
+  <!--New skills section... Might try centering elements rather than left-justify a list? **** -->
+  
+  <div id="accordion" role="tablist">
+  <div class="card">
+    <div class="card-header text-center" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Web
+        </a>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-group">
+			<div class="card" style="width: 20rem;">
+				<ul class="list-unstyled">
+					<li class="media" id="html">
+						<img class="mr-3" src="./img/html.png" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">HTML5</h5>
+						</div>
+					</li>
+					<li class="media my-4" id="css">
+						<img class="mr-3" src="./img/css.png" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">CSS3</h5>
+						</div>
+					</li>
+					<li class="media" id="boot">
+						<img class="mr-3" src="./img/bootstrap.png" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">Bootstrap</h5>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+    </div>
+  </div>
+  <div class="card">
+	<div class="card-header text-center" role="tab" id="headingTwo">
+	  <h5 class="mb-0">
+		<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		  Database
+		</a>
+	  </h5>
+	</div>
+	<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
+			<div class="card">
+				<ul class="list-unstyled">
+					<li class="media" id="html">
+						<img class="mr-3" src="./img/sql.png" alt="Generic placeholder image">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">MySQL</h5>
+						</div>
+					</li>
+					<li class="media" id="html">
+						<img class="mr-3" src="./img/sqlserver.png" alt="./img/sqlserver.png">
+						<div class="media-body">
+							<h5 class="mt-0 mb-1">SQL Server/TSQL</h5>
+						</div>
+					</li>
+				</ul>
+			</div>
+	</div>
+  </div>
+	<div class="card">
+		<div class="card-header text-center" role="tab" id="headingThree">
+			<h5 class="mb-0">
+				<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				Application
+				</a>
+			</h5>
+		</div>
+		<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+
+			<ul class="list-unstyled">
+				<li class="media" id="html">
+					<img class="mr-3" src="./img/asp.png" alt="Generic placeholder image">
+					<div class="media-body">
+						<h5 class="mt-0 mb-1">ASP.NET</h5>
+					</div>
+				</li>
+				<li class="media my-4" id="css">
+					<img class="mr-3" src="./img/csharp.png" alt="Generic placeholder image">
+					<div class="media-body">
+						<h5 class="mt-0 mb-1">C#</h5>
+					</div>
+				</li>
+				<li class="media" id="boot">
+					<img class="mr-3" src="./img/c.png" alt="Generic placeholder image">
+					<div class="media-body">
+						<h5 class="mt-0 mb-1">C</h5>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+    </div>
+  
+  
+  
+  <!--Contact--><br><br><br>
 	<div class="container-fluid my-5 px-5" id="contact">
 	<h2 class="text-center">Contact me!</h2>
 		<div class="row my-3">
@@ -188,8 +338,8 @@
 				<img src="./img/fb.png">
 				<a href="https://www.facebook.com/ChrisConnell91">On Facebook</a>
 			</div>
-			<div class="col-sm">
-				connell.c@comcast.net
+			<div class="col-sm pt-3">
+				connell.c@comcast.net / (503) 936 4352
 			</div>
 		</div>
 	</div>
@@ -199,5 +349,13 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<!-- Was hoping to have a hover slide in effect here*** 
+	<script>
+		$( "#hoverme" ).click(function() {
+			$( "#undertext" ).slideDown( "slow", function() {
+			// Animation complete.
+			});
+		});
+	</script>  -->
   </body>
 </html>
