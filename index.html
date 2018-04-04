@@ -1,362 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Required meta tags -->
-		<title>Chris Connell</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+	<title>Chris Connell</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<link rel="stylesheet" href="./css/webpage.css">
-		
-		<script>
-			var shiftWindow = function() { scrollBy(0, -50) };
-			window.addEventListener("hashchange", shiftWindow);
-			function load() { if (window.location.hash) shiftWindow(); }
-		</script>
-	</head>
-	<body onload="load()" id="home">
-  
-	<!-- Navigation -->
-	<nav class="navbar navbar-toggleable-md fixed-top navbar-light" style="background-color: #407fe5;">
-		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<a class="navbar" href="#">
-		</a>
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	   <link rel="stylesheet" href="currentSite.css">
+     <script>
+     $(function () {
+      $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+    });
+</script>
+     <!-- body -->
+  </head>
+  <body id="home">
+<!-- Navigation -->
+<nav class="navbar navbar-toggleable-md fixed-top navbar-light">
+	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
 
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#projects">Projects</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#skills">Skills</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-  
-  <!--- /end navigation --->
-  
-  <!--About-->
-	<div class="jumbotron jumbotron-fluid text-center bg-light-grey mt-4">
-		<div class="container">
-			<h1 class="display-2">Chris Connell</h1>
-			<p class="lead">Web & Software Developer based in Portland, OR</p>
-		</div>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto" id="navItems">
+			<li class="nav-item active">
+				<a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#skills">Skills</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#projects">Projects</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact</a>
+			</li>
+		</ul>
 	</div>
-	<h1 class="text-center">About me</h1>
-	<div class="text-center">
-		<img src="./img/me.jpg" class="rounded" alt="...">
-	</div>
-	<p class="text-center">I'm a developer out of Portland, OR where I was both born and raised.</p>
-	<p class="text-center">After fiddling aroud with programming for awhile I have decided to make a career out of it.</p>
-	<p class="text-center">I am versed in both web and standalone application design.</p>
-	<p class="text-center">Please take a look at my portfolio, thanks for stopping by!</p>
-	
-  <!--/About-->
-  
-  <!--Projects ADD TO THIS WHEN YOU CREATE SOME -->
-	<div class="card text-white my-5" id="projects">
-		<img class="card-img" src="./img/web2.png" alt="Card image">
-		<div class="card-img-overlay">
-			<h1 class="card-title text-center my-3">Projects</h1>
-		</div>
-	</div>
-	<!--/Project header-->
-	
-	<div class="card-deck my-5">
-		<div class="card" id="buff">
-			<img class="card-img-top" src="./img/fitness.jpeg" alt="Card image cap">
-			<div class="card-body">
-			<!-- Project link goes here -->
-				<h4 class="card-title text-center">Buff Fitness Website</h4>
-				<p class="card-text text-center">A website I created using Bootstrap and Javascript for a personal trainer client.</p>
-			</div>
-		</div>
-		<div class="card" id="data">
-			<img class="card-img-top" src="./img/data.jpeg" alt="Card image cap">
-			<!-- Project link goes here -->
-			<div class="card-body">
-				<h4 class="card-title text-center">Database Project</h4>
-				<p class="card-text text-center">An auto back-up program I wrote in SQL.</p>
-			</div>
-		</div>
-		<div class="card" id="collab">
-			<img class="card-img-top" src="./img/collab.jpeg" alt="Card image cap">
-			<div class="card-body">
-			<!-- Project link goes here -->
-				<h4 class="card-title text-center">Collaberative C# Project</h4>
-				<p class="card-text text-center">I worked with a small team to create this application</p>
-			</div>
-		</div>
-	</div>
-	<br><br><br><br>
-  <!-- /Projects -->
-  
-  <!-- Skills 
-	** Not sure about this here... Thinking just a container with title, projects already has picture. **
-  
-	<div class="card text-white my-5" id="skills">
-		<img class="card-img" src="./img/skills.jpeg" alt="Card image">
-		<div class="card-img-overlay">
-			<h1 class="card-title text-center my-3">Skills</h1>
-		</div>
-	</div> -->
-	<div class="jumbotron jumbotron-fluid text-center">
-		<div class="container">
-			<div id="hoverme">
-				<h1 class="display-3">Skills</h1>
-			</div>
-			<p class="lead" id="undertext">These are the technologies I am familiar with. I have a core understanding of a full stack, and am learning more languages constantly.</p>
-		</div>
-	</div>
-	
-	<!-- Kind of a mess... The titles "web", "database", "application" are centered in different container than the listed elements
-	<div class="card-group text-center">
-		<div class="card" style="width: 20rem;">
-			<div class="card-header text-primary h3 pl-5">
-				Web Development
-			</div>
-			<ul class="list-unstyled">
-				<li class="media" id="html">
-					<img class="mr-3" src="./img/html.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">HTML5</h5>
-					</div>
-				</li>
-				<li class="media my-4" id="css">
-					<img class="mr-3" src="./img/css.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">CSS3</h5>
-					</div>
-				</li>
-				<li class="media" id="boot">
-					<img class="mr-3" src="./img/bootstrap.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">Bootstrap</h5>
-					</div>
-				</li>
-			</ul>
-		</div>
-		<div class="card" style="width: 20rem;">
-			<div class="card-header text-primary h3 pl-5">
-				Database Management
-			</div>
-				<ul class="list-unstyled">
-					<li class="media" id="html">
-						<img class="mr-3" src="./img/sql.png" alt="Generic placeholder image">
-						<div class="media-body">
-							<h5 class="mt-0 mb-1">MySQL</h5>
-						</div>
-					</li>
-					<li class="media" id="html">
-						<img class="mr-3" src="./img/sqlserver.png" alt="./img/sqlserver.png">
-						<div class="media-body">
-							<h5 class="mt-0 mb-1">SQL Server/TSQL</h5>
-						</div>
-					</li>
-				</ul>
-		</div>
-	  <div class="card" style="width: 20rem;">
-		<div class="card-header text-primary h3 pl-6">
-				Application
-		</div>
-			<ul class="list-unstyled">
-				<li class="media" id="html">
-					<img class="mr-3" src="./img/asp.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">ASP.NET</h5>
-					</div>
-				</li>
-				<li class="media my-4" id="css">
-					<img class="mr-3" src="./img/csharp.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">C#</h5>
-					</div>
-				</li>
-				<li class="media" id="boot">
-					<img class="mr-3" src="./img/c.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">C</h5>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	
-   /Skills
-  
-  <div class="card-group text-center">
-		<div class="card" style="width: 20rem;">
-			<div class="card-header text-primary h3 pl-5">
-				Web Development
-			</div>
-			<ul class="list-unstyled">
-				<li class="media" id="html">
-					<img class="mr-3" src="./img/html.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">HTML5</h5>
-					</div>
-				</li>
-				<li class="media my-4" id="css">
-					<img class="mr-3" src="./img/css.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">CSS3</h5>
-					</div>
-				</li>
-				<li class="media" id="boot">
-					<img class="mr-3" src="./img/bootstrap.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">Bootstrap</h5>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>  -->
-  
-  
-  <!--New skills section... Might try centering elements rather than left-justify a list? **** -->
-  
-  <div id="accordion" role="tablist">
-  <div class="card">
-    <div class="card-header text-center" role="tab" id="headingOne">
-      <h5 class="mb-0">
-        <a data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Web
-        </a>
-      </h5>
-    </div>
-
-    <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne" data-parent="#accordion">
-        <div class="card-group">
-			<div class="card" style="width: 20rem;">
-				<ul class="list-unstyled">
-					<li class="media" id="html">
-						<img class="mr-3" src="./img/html.png" alt="Generic placeholder image">
-						<div class="media-body">
-							<h5 class="mt-0 mb-1">HTML5</h5>
-						</div>
-					</li>
-					<li class="media my-4" id="css">
-						<img class="mr-3" src="./img/css.png" alt="Generic placeholder image">
-						<div class="media-body">
-							<h5 class="mt-0 mb-1">CSS3</h5>
-						</div>
-					</li>
-					<li class="media" id="boot">
-						<img class="mr-3" src="./img/bootstrap.png" alt="Generic placeholder image">
-						<div class="media-body">
-							<h5 class="mt-0 mb-1">Bootstrap</h5>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-    </div>
+</nav>
+    <!--/Navigation-->
+    <!-- About me -->
+  <div class="d-flex" id="mainContainer">
+      <div class="container text-center" id="titleContainer">
+        <br/><br/>
+        <h1 class="nameClass">Chris.Connell();</h1>
+        <h3 class="titleSubtext">Web & Software developer in Portland, OR</h3>
+        <img src="newme.jpg" id="circle">
+        <p id="aboutMe">Hey, I'm Chris! My focus is fullstack web development.<br/> Check out
+        my portfolio and contact me if you're looking for a new hire.
+        <br/>Or a racquetball partner.</p>
+      </div>
   </div>
-  <div class="card">
-	<div class="card-header text-center" role="tab" id="headingTwo">
-	  <h5 class="mb-0">
-		<a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-		  Database
-		</a>
-	  </h5>
-	</div>
-	<div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#accordion">
-			<div class="card">
-				<ul class="list-unstyled">
-					<li class="media" id="html">
-						<img class="mr-3" src="./img/sql.png" alt="Generic placeholder image">
-						<div class="media-body">
-							<h5 class="mt-0 mb-1">MySQL</h5>
-						</div>
-					</li>
-					<li class="media" id="html">
-						<img class="mr-3" src="./img/sqlserver.png" alt="./img/sqlserver.png">
-						<div class="media-body">
-							<h5 class="mt-0 mb-1">SQL Server/TSQL</h5>
-						</div>
-					</li>
-				</ul>
-			</div>
-	</div>
-  </div>
-	<div class="card">
-		<div class="card-header text-center" role="tab" id="headingThree">
-			<h5 class="mb-0">
-				<a class="collapsed" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				Application
-				</a>
-			</h5>
-		</div>
-		<div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#accordion">
+  <hr>
 
-			<ul class="list-unstyled">
-				<li class="media" id="html">
-					<img class="mr-3" src="./img/asp.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">ASP.NET</h5>
-					</div>
-				</li>
-				<li class="media my-4" id="css">
-					<img class="mr-3" src="./img/csharp.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">C#</h5>
-					</div>
-				</li>
-				<li class="media" id="boot">
-					<img class="mr-3" src="./img/c.png" alt="Generic placeholder image">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1">C</h5>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+    <!-- Skills... underline "skills" and make large. Undertext should be small.
+  Grey background? -->
+  <div class="d-flex" id="skills">
+    <div class="container-fluid" a href="#skills">
+      <div class="text-center">
+        <br />
+        <br />
+        <h1 class="skillsHeadtext">
+          Skills
+        </h1>
+        <p>
+          These are the languages and technologies with which I'm most familiar. I'm always working to expand my skillset!<br/>
+        </p>
+        <br />
+        <br/>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <h4>Web</h4>
+              <br />
+              <p>HTML5 | CSS3</p>
+              <p>Javascript | Knockout.js | jQuery</p>
+            </div>
+            <div class="col">
+              <h4>Application</h4>
+              <br />
+              <p>C#</p>
+              <p>C</p>
+            </div>
+            <div class="col">
+              <h4>Data</h4>
+              <br />
+              <p>SQL Server</p>
+              <p>MySQL</p>
+              <p>PowerBI</p>
+            </div>
+            <div class="col">
+              <h4>Framework</h4>
+              <br />
+              <p>ASP.NET MVC</p>
+              <p>Entity</p>
+              <p>Bootstrap | Materialize CSS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
     </div>
-  
-  
-  
-  <!--Contact--><br><br><br>
-	<div class="container-fluid my-5 px-5" id="contact">
-	<h2 class="text-center">Contact me!</h2>
-		<div class="row my-3">
-			<div class="col-sm">
-				<img src="./img/linked.png">
-				<a href="https://www.linkedin.com/in/chris-connell/">Connect With Me!</a>
-			</div>
-			<div class="col-sm">
-				<img src="./img/fb.png">
-				<a href="https://www.facebook.com/ChrisConnell91">On Facebook</a>
-			</div>
-			<div class="col-sm">
-				<img src="./img/git.png">
-				<a href ="https:www.github.com/ChrisConnell1">On Github</a>
-			</div>
-		</div>
-	</div>
-  <!--/Contact-->
-  
-  
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<!-- Was hoping to have a hover slide in effect here*** 
-	<script>
-		$( "#hoverme" ).click(function() {
-			$( "#undertext" ).slideDown( "slow", function() {
-			// Animation complete.
-			});
-		});
-	</script>  -->
+    <hr>
+    <!-- /SKills -->
+    <!-- Projects -->
+    <div class="container-fluid" id="projects" a href="#projects">
+      <div class="text-center">
+        <br/>
+        <br/>
+        <h1>Projects</h1>
+        <p>Links to GitHub attached.</p>
+      <div>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="blue.png" alt="Card image cap">
+            <div class="card-body">
+              <br/>
+              <a href="https://github.com/ChrisConnell1/Live-Project-Snippets">
+                <h5 class="card-title">Blue Ribbons Review</h5>
+              </a>
+              <p class="card-text">A review website built on the Entity framework. I created several features and back-end implementations for this site.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="lib.png" alt="Card image cap">
+            <div class="card-body">
+              <br/>
+              <a href="https://github.com/ChrisConnell1/Tech-Academy-Projects/tree/master/SQL">
+                <h5 class="card-title">Library db Schema</h5>
+              </a>
+              <p class="card-text">I created this SQL schema with several stored procedures to query all properties of a library system.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="reel.png" alt="Card image cap">
+            <div class="card-body">
+              <br/>
+              <a href="https://github.com/ChrisConnell1/Tech-Academy-Projects/tree/master/VisualStudio/MegaCasinoChallenge">
+                <h5 class="card-title">Slot Machine</h5>
+              </a>
+              <p class="card-text">I wrote this app in C# with Visual Studio. It features game logic, running wallet, and reels.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="pizza.png" alt="Card image cap">
+            <div class="card-body">
+              <br/>
+              <a href="https://github.com/ChrisConnell1/Tech-Academy-Projects/tree/master/Pizza%20Project">
+                <h5 class="card-title">JS Pizza Order Website</h5>
+              </a>
+              <p class="card-text">A website made with Javascript, all about God's gift to man: pizza.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--Contact--><br><br><br>
+ <div class="container-fluid my-5 px-5" id="contact">
+   <h5 class="text-center">Contact me at <a href="mailto:connell.c@comcast.net">connell.c@comcast.net</a> or:</h5>
+     <div class="row my-3">
+       <div class="col-sm">
+         <a href="https://www.linkedin.com/in/chris-connell/">
+           <img src="./img/linked.png">
+         </a>
+       </div>
+       <div class="col-sm">
+         <a href="https://www.facebook.com/ChrisConnell91">
+           <img src="./img/fb.png">
+         </a>
+       </div>
+       <div class="col-sm">
+         <a href ="https://www.github.com/ChrisConnell1">
+           <img src="./img/git.png">
+         </a>
+       </div>
+     </div>
+ </div>
+ <!--/Contact-->
+
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </html>
