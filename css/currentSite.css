@@ -1,0 +1,58 @@
+#titleContainer {
+  height: 500px;
+}
+
+.navbar-fixed-top > a {
+  color: #FFF;
+}
+
+.navbar-fixed-top.scrolled {
+  color: #000 !important;
+  transition: background-color 200ms linear;
+}
+
+#mainContainer {
+  background-image: url(Portland.jpg);
+  opacity: .7;
+}
+
+.card-deck > card > card-img-top {
+  width: 300px;
+  height: 221px;
+}
+
+.nameClass {
+  font-size: 48px;
+  color: white;
+}
+
+.titleSubtext {
+  color: white;
+}
+
+#aboutMe{
+  color: white
+}
+
+#circle {
+  background-size: cover;
+  border-radius:50% 50% 50% 50%;
+  width:150px;
+  height:150px;
+}
+
+#skills {
+  background-color:  #f5f5f0;
+}
+
+#projects {
+  background-color: #f5f5f0;
+}
+
+.skillsHeadtext {
+  font-size: 48px;
+}
+
+h4 {
+  text-decoration-line: underline;
+}
