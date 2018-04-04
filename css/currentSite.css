@@ -8,7 +8,7 @@
 
 #mainContainer {
   background-image: url(https://github.com/ChrisConnell1/ChrisConnell1.github.io/blob/master/img/Portland.jpg);
-  opacity: .6;
+  opacity: .85;
 }
 
 .card-deck > card > card-img-top {
