@@ -1,193 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
-    <!-- Required meta tags -->
-	<title>Chris Connell</title>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-	   <link rel="stylesheet" href="./css/currentSite.css">
-     <script>
-     $(function () {
-      $(document).scroll(function () {
-        var $nav = $(".navbar-fixed-top");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-      });
-    });
-</script>
-     <!-- body -->
+    <title>Chris.Connell()</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Rubik+Mono+One" rel="stylesheet">
+
+    <!-- Plugin CSS -->
+    <!--<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">-->
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
   </head>
-  <body id="home">
-<!-- Navigation -->
-<nav class="navbar navbar-toggleable-md fixed-top navbar-light">
-	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto" id="navItems">
-			<li class="nav-item active">
-				<a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#skills">Skills</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#projects">Projects</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contact">Contact</a>
-			</li>
-		</ul>
-	</div>
-</nav>
-    <!--/Navigation-->
-    <!-- About me -->
-  <div class="d-flex" id="mainContainer">
-      <div class="container text-center" id="titleContainer">
-        <br/><br/>
-        <h1>Chris.Connell();</h1>
-        <p>Web & Software developer in Portland, OR</p>
-        <img src="./img/newme.jpg" id="circle">
-	<br/><br/>
-        <p id="aboutMe">Hey, I'm Chris! My focus is fullstack web development.<br/> Check out
-        my portfolio and contact me if you're looking for a new hire.
-        <br/>Or a racquetball partner.</p>
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Skills</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Projects</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-  </div>
-  <hr>
+    </nav>
 
-    <!-- Skills... underline "skills" and make large. Undertext should be small.
-  Grey background? -->
-  <div class="d-flex" id="skills">
-    <div class="container-fluid" a href="#skills">
-      <div class="text-center">
-        <br />
-        <br />
-        <h1 class="skillsHeadtext">
-          Skills
-        </h1>
-        <p>
-          These are the languages and technologies with which I'm most familiar. I'm always working to expand my skillset!<br/>
-        </p>
-        <br />
-        <br/>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col">
-              <h4>Web</h4>
-              <br />
-              <p>HTML5 | CSS3</p>
-              <p>Javascript | Knockout.js | jQuery</p>
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5" src="img/download.png" id="circle" alt="" style= "border-radius: 50% 50% 50% 50%; width: 200px; height: 200px;">
+        <h1 class="text-uppercase mb-0">Chris Connell</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0" style="font-family: 'Comfortaa', cursive;">Hi, I'm Chris. I'm a software developer from the wonderful Portland, OR. Please have a look at my portfolio. Don't hesitate to contact me if you have an opportunity.</h2>
+        <br>
+        <h4 class="font-weight-light mb-0" style="font-family: 'Comfortaa', cursive;">Or need a racquetball partner.</h4>
+      </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Skills</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <p>.NET MVC</p>
+                  <p>Web API</p>
+                  <p>Razor Syntax</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/csharp1.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <p>SQL Server</p>
+                  <p>MySQL</p>
+                  <p>SSRS</p>
+                  <p>Entity Framework</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/sql.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <p>Git</p>
+                  <p>Team Foundation Server</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/vcc.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <p></p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/html.png" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="portfolio-item d-block mx-auto">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <p>Bootstrap</p>
+                  <p>Materialize</p>
+                  <p>Responsive Design</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/css3.png" alt="">
             </div>
-            <div class="col">
-              <h4>Application</h4>
-              <br />
-              <p>C#</p>
-              <p>C</p>
-            </div>
-            <div class="col">
-              <h4>Data</h4>
-              <br />
-              <p>SQL Server</p>
-              <p>MySQL</p>
-              <p>PowerBI</p>
-            </div>
-            <div class="col">
-              <h4>Framework</h4>
-              <br />
-              <p>ASP.NET MVC</p>
-              <p>Entity</p>
-              <p>Bootstrap | Materialize CSS</p>
-            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <p>jQuery</p>
+                  <p>Knockout.js</p>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/js.png" alt="">
+            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      </div>
-    </div>
-    <hr>
-    <!-- /SKills -->
-    <!-- Projects -->
-    <div class="container-fluid" id="projects" a href="#projects">
-      <div class="text-center">
-        <br/>
-        <br/>
-        <h1>Projects</h1>
-        <p>Links to GitHub attached.</p>
-      <div>
-        <div class="card-deck">
-          <div class="card">
-            <img class="card-img-top" src="./img/blue.png" alt="Card image cap">
-            <div class="card-body">
-              <br/>
-              <a href="https://github.com/ChrisConnell1/Live-Project-Snippets">
-                <h5 class="card-title">Blue Ribbons Review</h5>
-              </a>
-              <p class="card-text">A review website built on the Entity framework. I created several features and back-end implementations for this site.</p>
-            </div>
+    <!-- Projects Section -->
+    <section class="bg-primary text-white mb-0 text-center" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Projects</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-3">
+            <p class="lead">Vinyl Collector</p>
+            <a href="https://github.com/ChrisConnell1/VinylCollector">
+              <img src="img/portfolio/vinyl.jpg">
+            </a>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="./img/lib.png" alt="Card image cap">
-            <div class="card-body">
-              <br/>
-              <a href="https://github.com/ChrisConnell1/Tech-Academy-Projects/tree/master/SQL">
-                <h5 class="card-title">Library db Schema</h5>
-              </a>
-              <p class="card-text">I created this SQL schema with several stored procedures to query all properties of a library system.</p>
-            </div>
+          <div class="col-lg-3 ml-auto">
+            <p class="lead">Blue Ribbons Review</p>
+            <a href="https://github.com/ChrisConnell1/Live-Project-Snippets">
+              <img src="img/portfolio/blue.png">
+            </a>
           </div>
-          <div class="card">
-            <img class="card-img-top" src="./img/reel.png" alt="Card image cap">
-            <div class="card-body">
-              <br/>
-              <a href="https://github.com/ChrisConnell1/Tech-Academy-Projects/tree/master/VisualStudio/MegaCasinoChallenge">
-                <h5 class="card-title">Slot Machine</h5>
-              </a>
-              <p class="card-text">I wrote this app in C# with Visual Studio. It features game logic, running wallet, and reels.</p>
-            </div>
-          </div>
-          <div class="card">
-            <img class="card-img-top" src="./img/pizza.png" alt="Card image cap">
-            <div class="card-body">
-              <br/>
-              <a href="https://github.com/ChrisConnell1/Tech-Academy-Projects/tree/master/Pizza%20Project">
-                <h5 class="card-title">JS Pizza Order Website</h5>
-              </a>
-              <p class="card-text">A website made with Javascript, all about God's gift to man: pizza.</p>
-            </div>
+          <div class="col-lg-3 ml-auto">
+            <p class="lead">Pizza Order</p>
+            <a href="https://github.com/ChrisConnell1/Tech-Academy-Projects/tree/master/Pizza%20Project">
+              <img src="img/portfolio/pizza.png">
+            </a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-5 mb-lg-0">
+          </div>
+          <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Contact Me!</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://github.com/ChrisConnell1">
+                  <i class="fa fa-fw fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.linkedin.com/in/chris-connell">
+                  <i class="fa fa-fw fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="mailto: connell.c@comcast.net">
+                  <i class="fa fa-fw fa-envelope"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+      <div class="container">
+        <small>Copyright &copy; Chris Connell 2018</small>
+      </div>
     </div>
 
-    <!--Contact--><br><br><br>
- <div class="container-fluid my-5 px-5" id="contact">
-   <h5 class="text-center">Contact me at <a href="mailto:connell.c@comcast.net">connell.c@comcast.net</a> or:</h5>
-     <div class="row my-3">
-       <div class="col-sm">
-         <a href="https://www.linkedin.com/in/chris-connell/">
-           <img src="./img/linked.png">
-         </a>
-       </div>
-       <div class="col-sm">
-         <a href="https://www.facebook.com/ChrisConnell91">
-           <img src="./img/fb.png">
-         </a>
-       </div>
-       <div class="col-sm">
-         <a href ="https://www.github.com/ChrisConnell1">
-           <img src="./img/git.png">
-         </a>
-       </div>
-     </div>
- </div>
- <!--/Contact-->
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
 
   </body>
 
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </html>
